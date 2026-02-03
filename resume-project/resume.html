@@ -7,9 +7,20 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            margin: 40px;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 30px 0;
+        }
+
+        /* A4 Page Styling */
+        .resume-page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
             background-color: #ffffff;
             color: #222;
+            padding: 35px 45px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
             line-height: 1.6;
         }
 
@@ -65,11 +76,23 @@
             background-color: #f3f3f3;
             padding: 10px;
             border-left: 4px solid #333;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
+
+<div class="resume-page">
 
 <header>
     <h1>Prerna Gaur</h1>
@@ -86,8 +109,8 @@
 
     <p>
         Roll No: <mark>524110065</mark> |
-        <a href="https://github.com/gprernag">GitHub Profile</a> |
-        <a href="https://www.linkedin.com/in/prerna-gaur-448b73232/">LinkedIn Profile</a>
+        <a href="https://github.com/gprernag">GitHub</a> |
+        <a href="https://www.linkedin.com/in/prerna-gaur-448b73232/">LinkedIn</a>
     </p>
 </header>
 
@@ -95,36 +118,31 @@
 
     <section>
         <h2>Education</h2>
-
         <table>
-            <thead>
-                <tr>
-                    <th>Institute</th>
-                    <th>Degree</th>
-                    <th>Year</th>
-                    <th>CGPA / Percentage</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>NIT Kurukshetra</td>
-                    <td>MCA</td>
-                    <td>2024 – 2027</td>
-                    <td>9.2561</td>
-                </tr>
-                <tr>
-                    <td>Mody University of Science & Technology</td>
-                    <td>BCA</td>
-                    <td>2021 – 2024</td>
-                    <td>9.39</td>
-                </tr>
-                <tr>
-                    <td>Green Field Academy, Hargaon</td>
-                    <td>CBSE (XII)</td>
-                    <td>2021</td>
-                    <td>93.2%</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Institute</th>
+                <th>Degree</th>
+                <th>Year</th>
+                <th>CGPA / Percentage</th>
+            </tr>
+            <tr>
+                <td>NIT Kurukshetra</td>
+                <td>MCA</td>
+                <td>2024 – 2027</td>
+                <td>9.2561</td>
+            </tr>
+            <tr>
+                <td>Mody University of Science & Technology</td>
+                <td>BCA</td>
+                <td>2021 – 2024</td>
+                <td>9.39</td>
+            </tr>
+            <tr>
+                <td>Green Field Academy, Hargaon</td>
+                <td>CBSE (XII)</td>
+                <td>2021</td>
+                <td>93.2%</td>
+            </tr>
         </table>
     </section>
 
@@ -133,42 +151,35 @@
 
         <article class="highlight">
             <h3>ChatConnect – Chatting Application</h3>
-            <p><em>Jan – Apr 2025 | Personal Project</em></p>
             <ul>
                 <li>Developed a multi-user private messaging desktop application.</li>
-                <li>Implemented real-time communication using <strong>Java Sockets</strong>.</li>
-                <li>Handled concurrent users using <strong>Multithreading</strong>.</li>
-                <li>Stored chat history using <strong>JDBC & MySQL</strong>.</li>
+                <li>Implemented real-time communication using Java Sockets.</li>
+                <li>Handled concurrent users using Multithreading.</li>
+                <li>Stored chat history using JDBC & MySQL.</li>
             </ul>
-            <small>Technologies: Java, Swing, JDBC, MySQL</small>
         </article>
 
         <article class="highlight">
             <h3>CineInsight – Movie Success Analysis</h3>
-            <p><em>Jan – Apr 2025 | Personal Project</em></p>
             <ul>
-                <li>Performed exploratory data analysis on IMDB dataset.</li>
+                <li>Performed EDA on IMDB dataset.</li>
                 <li>Created interactive dashboards using PowerBI.</li>
-                <li>Applied <strong>Pearson</strong> and <strong>Spearman correlation</strong>.</li>
+                <li>Applied Pearson & Spearman correlation.</li>
             </ul>
-            <small>Tools: PowerBI, IMDB Dataset</small>
         </article>
 
         <article class="highlight">
             <h3>AgriConnect – Farmer Information System</h3>
-            <p><em>Jan – Apr 2024 | Academic Project</em></p>
             <ul>
-                <li>Developed a digital card system for farmers.</li>
-                <li>Designed GUI forms using Visual Studio.</li>
-                <li>Conducted user training and testing.</li>
+                <li>Developed digital farmer cards.</li>
+                <li>Designed GUI using C#.</li>
+                <li>Conducted testing and user training.</li>
             </ul>
-            <small>Tools: C#, Visual Studio</small>
         </article>
     </section>
 
     <section>
         <h2>Technical Skills</h2>
-
         <dl>
             <dt><strong>Languages</strong></dt>
             <dd>Java, JavaScript, HTML, CSS, C, React</dd>
@@ -176,59 +187,30 @@
             <dt><strong>Databases</strong></dt>
             <dd>MySQL</dd>
 
-            <dt><strong>Frameworks & Technologies</strong></dt>
+            <dt><strong>Frameworks</strong></dt>
             <dd>JDBC, Swing, AWT, Java Sockets</dd>
 
-            <dt><strong>Developer Tools</strong></dt>
+            <dt><strong>Tools</strong></dt>
             <dd>VS Code, Visual Studio</dd>
         </dl>
     </section>
 
     <section>
-        <h2>Coursework</h2>
-        <ol>
-            <li>Data Structures and Algorithms</li>
-            <li>Database Management Systems</li>
-            <li>Object Oriented Programming</li>
-            <li>Operating Systems</li>
-        </ol>
-    </section>
-
-    <section>
         <h2>Achievements</h2>
         <ul>
-            <li>Secured <strong>AIR 320</strong> in NIMCET 2024</li>
-            <li>First Place – Ideathon Competition (2023)</li>
-            <li>First Position – Hacker’s Asylum Coding Competition (2022)</li>
-            <li>Fourth on Leaderboard – War of Code (GeeksforGeeks)</li>
+            <li>AIR 320 – NIMCET 2024</li>
+            <li>First Place – Ideathon 2023</li>
+            <li>Winner – Hacker’s Asylum 2022</li>
         </ul>
     </section>
-
-    <aside>
-        <h2>Soft Skills & Interests</h2>
-        <p>
-            <span>Problem Solving</span>,
-            <span>Team Collaboration</span>,
-            <span>Adaptability</span>,
-            <span>Communication</span>
-        </p>
-        <p>
-            Interested in <em>Software Development</em>,
-            <em>Databases</em>,
-            <em>AI & Machine Learning</em>
-        </p>
-    </aside>
 
 </main>
 
 <footer>
-    <hr>
-    <p>
-        <small>
-            I hereby declare that the above information is true to the best of my knowledge.
-        </small>
-    </p>
+    <p><small>Declaration: Information is true to best of my knowledge.</small></p>
 </footer>
+
+</div>
 
 </body>
 </html>
